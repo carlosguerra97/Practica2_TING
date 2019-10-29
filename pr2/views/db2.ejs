@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Base de datos TFM</title>
+  <title>Base de datos asignaturas</title>
 </head>
 
 <body>
 
-<h1>Base de datos TFM</h1>
+<h1>Base de datos asignaturas</h1>
 
 <div class="container">
-<h2>Trabajos encontrados</h2>
+<h2>Asignaturas del máster</h2>
 
 <ul>
     <% results.forEach(function(r) { %>
-        <li><%= r.id %> - <%= r.nombre_tfm %> - <%= r.posible_tutor %></li>
+        <li><%= r.id %> - <%= r.nombre_asignatura %> - <%= r.profesor %></li>
     <% }); %>
 </ul>
 
